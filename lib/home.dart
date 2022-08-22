@@ -14,6 +14,7 @@ import 'package:campusparc_osu/spaces.dart';
 import 'package:campusparc_osu/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:maps_launcher/maps_launcher.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, this.title = "Parking Spaces"}) : super(key: key);
@@ -71,7 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        tooltip: 'Set drive time',
+        tooltip: 'Start Driving',
         child: const Icon(Icons.time_to_leave),
       ),
     );
@@ -102,9 +103,15 @@ class _MyHomePageState extends State<MyHomePage> {
                 ? LinearProgressIndicator(value: occupancies[key])
                 : null,
             trailing: occupancies.containsKey(key)
-                ? Text("${(occupancies[key]! * 100).round()}%")
+                ? Stack(alignment: Alignment.centerRight, children: [
+                    const Text(
+                      "100%",
+                      style: TextStyle(color: Colors.transparent),
+                    ),
+                    Text("${(occupancies[key]! * 100).round()}%")
+                  ])
                 : null,
-            onTap: () {},
+            onTap: () => MapsLauncher.launchQuery(spaces[key]!["address"]!),
           );
   }
 

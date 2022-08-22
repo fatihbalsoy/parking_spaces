@@ -160,6 +160,7 @@
         },
         "2cd23f92-b83b-4430-8b61-6cd629ca3cdd": {
             "_zoneId": "7028eac4-9013-4e38-92d8-df935f723f5b",
+            "name": "West Lane Avenue Garage",
             "occupancy": [
                 {
                     "occupancyRate": {
@@ -347,6 +348,7 @@
         },
         "ea0af750-0746-456b-87c1-dd79aa8c9be9": {
             "_zoneId": "c0cbfa14-bde2-41d1-8e52-6cbcfe02877d",
+            "name": "SafeAuto Hospitals Garage",
             "occupancy": [
                 {
                     "occupancyRate": {

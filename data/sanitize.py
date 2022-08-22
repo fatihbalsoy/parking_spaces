@@ -21,6 +21,7 @@ for park in jFile.keys():
     print(jFile[park]["name"] + "\t------\t" + park)
     sanitizedJFile[park] = {
         "name": jFile[park]["name"],
+        "address": jFile[park]["address"],
         "zoneId": jFile[park]["_zoneId"]
     }
 
