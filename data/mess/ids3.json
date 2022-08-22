@@ -1,0 +1,129 @@
+{
+    "data": {
+        "fcd70232-915d-4ba7-a52f-de654abf770d": {
+            "_zoneId": "4e7ec3aa-1d9b-4c39-ae3a-12fa43a7c409",
+            "name": "Old Cannon Drive Garage",
+            "occupancy": [
+                {
+                    "occupancyRate": {
+                        "type": "Number",
+                        "value": 0.05
+                    }
+                },
+                {
+                    "occupancyLastUpdate": {
+                        "type": "Date",
+                        "value": "2022-08-21T15:51:56.000Z"
+                    }
+                }
+            ]
+        },
+        "a36682f5-fa71-4f1a-97b3-00228a233663": {
+            "_zoneId": "5d645266-81f3-4ce2-b0b9-6462b17d901f",
+            "name": "11th Avenue Garage",
+            "occupancy": [
+                {
+                    "occupancyRate": {
+                        "type": "Number",
+                        "value": 0.31
+                    }
+                },
+                {
+                    "occupancyLastUpdate": {
+                        "type": "Date",
+                        "value": "2022-08-21T15:51:56.000Z"
+                    }
+                }
+            ]
+        },
+        "74867fcd-7027-4c43-b01a-9fd8fff4fbe1": {
+            "_zoneId": "77c2e7f6-3173-4885-bebf-1d88d22304a6",
+            "name": "9th Avenue West Garage",
+            "occupancy": [
+                {
+                    "occupancyRate": {
+                        "type": "Number",
+                        "value": 0.39
+                    }
+                },
+                {
+                    "occupancyLastUpdate": {
+                        "type": "Date",
+                        "value": "2022-08-21T15:51:56.000Z"
+                    }
+                }
+            ]
+        },
+        "3303e596-acde-41b1-bf4f-56c88d083ca4": {
+            "_zoneId": "83d77713-a424-4935-a0f8-abe1e906dc5c",
+            "name": "9th Avenue East Garage",
+            "occupancy": [
+                {
+                    "occupancyRate": {
+                        "type": "Number",
+                        "value": 0.28
+                    }
+                },
+                {
+                    "occupancyLastUpdate": {
+                        "type": "Date",
+                        "value": "2022-08-21T15:51:56.000Z"
+                    }
+                }
+            ]
+        },
+        "4ec869c5-02cc-4591-af6b-3014b8feec43": {
+            "_zoneId": "8c34fe60-827e-4435-b2d1-27bc193b907e",
+            "name": "Medical Center Garage",
+            "occupancy": [
+                {
+                    "occupancyRate": {
+                        "type": "Number",
+                        "value": 0.14
+                    }
+                },
+                {
+                    "occupancyLastUpdate": {
+                        "type": "Date",
+                        "value": "2022-08-21T15:51:56.000Z"
+                    }
+                }
+            ]
+        },
+        "ea0af750-0746-456b-87c1-dd79aa8c9be9": {
+            "_zoneId": "c0cbfa14-bde2-41d1-8e52-6cbcfe02877d",
+            "occupancy": [
+                {
+                    "occupancyRate": {
+                        "type": "Number",
+                        "value": 0.38
+                    }
+                },
+                {
+                    "occupancyLastUpdate": {
+                        "type": "Date",
+                        "value": "2022-08-21T15:51:56.000Z"
+                    }
+                }
+            ]
+        },
+        "26d0363f-a497-486c-b465-013b721aa558": {
+            "_zoneId": "1ccc1cab-8db5-4e71-9b60-9b2d561ffdc0",
+            "name": "South Campus Gateway Garage",
+            "occupancy": [
+                {
+                    "occupancyRate": {
+                        "type": "Number",
+                        "value": 0.3
+                    }
+                },
+                {
+                    "occupancyLastUpdate": {
+                        "type": "Date",
+                        "value": "2022-08-21T15:51:56.000Z"
+                    }
+                }
+            ]
+        }
+    }
+}

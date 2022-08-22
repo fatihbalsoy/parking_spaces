@@ -1,0 +1,315 @@
+{
+    "data": {
+        "562ff810-b410-432e-814d-50aa359a9b09": {
+            "_zoneId": "1ec86d80-fd7d-447f-bf52-1af1ff3fdb94",
+            "occupancy": [
+                {
+                    "occupancyRate": {
+                        "type": "Number",
+                        "value": 0.09
+                    }
+                },
+                {
+                    "occupancyLastUpdate": {
+                        "type": "Date",
+                        "value": "2022-08-15T22:51:24.000Z"
+                    }
+                }
+            ]
+        },
+        "686c1179-b133-4934-8d93-2fafde039e81": {
+            "_zoneId": "741881dd-62a7-488e-9005-8648c6cd29cc",
+            "occupancy": [
+                {
+                    "occupancyRate": {
+                        "type": "Number"
+                    }
+                },
+                {
+                    "occupancyLastUpdate": {
+                        "type": "Date",
+                        "value": "2022-08-15T22:52:04.195Z"
+                    }
+                }
+            ]
+        },
+        "faef0778-e1ba-4dca-8ac4-fee0d23e3a37": {
+            "_zoneId": "97ec5763-8a22-42a9-9ffc-d280ab760451",
+            "occupancy": [
+                {
+                    "occupancyRate": {
+                        "type": "Number",
+                        "value": 0.28
+                    }
+                },
+                {
+                    "occupancyLastUpdate": {
+                        "type": "Date",
+                        "value": "2022-08-15T22:51:24.000Z"
+                    }
+                }
+            ]
+        },
+        "23245f84-dbcf-4dff-8f19-333653afec98": {
+            "_zoneId": "dd464750-4ab6-458e-b9b9-d05f23041db9",
+            "occupancy": [
+                {
+                    "occupancyRate": {
+                        "type": "Number"
+                    }
+                },
+                {
+                    "occupancyLastUpdate": {
+                        "type": "Date",
+                        "value": "2022-08-15T22:52:04.195Z"
+                    }
+                }
+            ]
+        },
+        "09ba829c-82fd-4039-9f1f-e76f88106516": {
+            "_zoneId": "fce21a02-a77d-4053-9a6c-bd0cf581023e",
+            "occupancy": [
+                {
+                    "occupancyRate": {
+                        "type": "Number"
+                    }
+                },
+                {
+                    "occupancyLastUpdate": {
+                        "type": "Date",
+                        "value": "2022-08-15T22:52:04.195Z"
+                    }
+                }
+            ]
+        },
+        "10d63902-5ab3-4b84-9221-a7745d861fdc": {
+            "_zoneId": "24ee7b12-b70e-4d70-a368-f87c5c2748fc",
+            "occupancy": [
+                {
+                    "occupancyRate": {
+                        "type": "Number",
+                        "value": 0.01
+                    }
+                },
+                {
+                    "occupancyLastUpdate": {
+                        "type": "Date",
+                        "value": "2022-08-15T22:51:24.000Z"
+                    }
+                }
+            ]
+        },
+        "f8826af1-5145-4565-b356-56c8f4945d2f": {
+            "_zoneId": "554ca8b7-44d1-4274-8c6a-7672d7da9319",
+            "occupancy": [
+                {
+                    "occupancyRate": {
+                        "type": "Number",
+                        "value": 0.01
+                    }
+                },
+                {
+                    "occupancyLastUpdate": {
+                        "type": "Date",
+                        "value": "2022-08-15T22:51:24.000Z"
+                    }
+                }
+            ]
+        },
+        "7eacd134-0967-45f8-902d-e808f18c5c6f": {
+            "_zoneId": "94ad243a-1036-4b78-bc71-63a78c791e49",
+            "occupancy": [
+                {
+                    "occupancyRate": {
+                        "type": "Number",
+                        "value": 0.01
+                    }
+                },
+                {
+                    "occupancyLastUpdate": {
+                        "type": "Date",
+                        "value": "2022-08-15T22:51:24.000Z"
+                    }
+                }
+            ]
+        },
+        "2e545030-96ee-45c1-a1de-54dfe72fe816": {
+            "_zoneId": "ab23166a-a892-42c9-8987-547a1f5809df",
+            "occupancy": [
+                {
+                    "occupancyRate": {
+                        "type": "Number",
+                        "value": 0.01
+                    }
+                },
+                {
+                    "occupancyLastUpdate": {
+                        "type": "Date",
+                        "value": "2022-08-15T22:51:24.000Z"
+                    }
+                }
+            ]
+        },
+        "2cd23f92-b83b-4430-8b61-6cd629ca3cdd": {
+            "_zoneId": "81c26c2c-1bcf-43e3-b94e-4b1346ebab0b",
+            "occupancy": [
+                {
+                    "occupancyRate": {
+                        "type": "Number",
+                        "value": 0.04
+                    }
+                },
+                {
+                    "occupancyLastUpdate": {
+                        "type": "Date",
+                        "value": "2022-08-15T22:51:24.000Z"
+                    }
+                }
+            ]
+        },
+        "2655f5d8-db5c-434a-8676-ae63478700f0": {
+            "_zoneId": "57990227-c2ee-48e1-a3d1-dccba15db3ca",
+            "name": "Lane Avenue Garage",
+            "occupancy": [
+                {
+                    "occupancyRate": {
+                        "type": "Number",
+                        "value": 0.15
+                    }
+                },
+                {
+                    "occupancyLastUpdate": {
+                        "type": "Date",
+                        "value": "2022-08-15T22:51:24.000Z"
+                    }
+                }
+            ]
+        },
+        "fddcbbc1-c07d-4e37-9b78-c65e39090747": {
+            "_zoneId": "6989c8f0-8661-4eda-af00-381c1587b1fd",
+            "name": "Tuttle Park Garage",
+            "occupancy": [
+                {
+                    "occupancyRate": {
+                        "type": "Number",
+                        "value": 0.03
+                    }
+                },
+                {
+                    "occupancyLastUpdate": {
+                        "type": "Date",
+                        "value": "2022-08-15T22:51:24.000Z"
+                    }
+                }
+            ]
+        },
+        "9d4518f2-2aee-442e-a54d-c40abb72b4c6": {
+            "_zoneId": "7ea21e3a-cf40-4431-a891-6b1eeaa7ec15",
+            "name": "Northwest Garage",
+            "occupancy": [
+                {
+                    "occupancyRate": {
+                        "type": "Number",
+                        "value": 0.06
+                    }
+                },
+                {
+                    "occupancyLastUpdate": {
+                        "type": "Date",
+                        "value": "2022-08-15T22:51:24.000Z"
+                    }
+                }
+            ]
+        },
+        "d6a0a6b2-6727-4821-b2f3-82fe1665a11f": {
+            "_zoneId": "44b3fa01-beca-49e4-a5f8-f8e2a56afd41",
+            "name": "12th Avenue Garage",
+            "occupancy": [
+                {
+                    "occupancyRate": {
+                        "type": "Number",
+                        "value": 0.6
+                    }
+                },
+                {
+                    "occupancyLastUpdate": {
+                        "type": "Date",
+                        "value": "2022-08-15T22:51:24.000Z"
+                    }
+                }
+            ]
+        },
+        "f2a79dbd-4761-48e0-8259-e645fa718498": {
+            "_zoneId": "c722de4b-c76b-41c7-88f0-ded4a73865e4",
+            "name": "Neil Avenue Garage",
+            "occupancy": [
+                {
+                    "occupancyRate": {
+                        "type": "Number",
+                        "value": 0.02
+                    }
+                },
+                {
+                    "occupancyLastUpdate": {
+                        "type": "Date",
+                        "value": "2022-08-15T22:51:24.000Z"
+                    }
+                }
+            ]
+        },
+        "56e35d52-4ae0-46e4-94d1-a6717bd8d60a": {
+            "_zoneId": "a1f9ebf9-9bb0-494e-8b57-4a4b5661abb7",
+            "name": "Arps Garage",
+            "occupancy": [
+                {
+                    "occupancyRate": {
+                        "type": "Number",
+                        "value": 0.09
+                    }
+                },
+                {
+                    "occupancyLastUpdate": {
+                        "type": "Date",
+                        "value": "2022-08-15T22:51:24.000Z"
+                    }
+                }
+            ]
+        },
+        "aa9043a8-0efd-441e-bf50-c28483174ade": {
+            "_zoneId": "04c042f4-7be7-4d1d-aa72-63cfc7603b9b",
+            "name": "Ohio Union North Garage",
+            "occupancy": [
+                {
+                    "occupancyRate": {
+                        "type": "Number",
+                        "value": 0.04
+                    }
+                },
+                {
+                    "occupancyLastUpdate": {
+                        "type": "Date",
+                        "value": "2022-08-15T22:51:24.000Z"
+                    }
+                }
+            ]
+        },
+        "11e97d4b-9ddd-4270-acac-16986a8f3a81": {
+            "_zoneId": "5438612e-5e38-43a8-acb0-7965ace1bac7",
+            "name": "Ohio Union South Garage",
+            "occupancy": [
+                {
+                    "occupancyRate": {
+                        "type": "Number",
+                        "value": 0.09
+                    }
+                },
+                {
+                    "occupancyLastUpdate": {
+                        "type": "Date",
+                        "value": "2022-08-15T22:51:24.000Z"
+                    }
+                }
+            ]
+        }
+    }
+}
