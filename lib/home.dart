@@ -3,29 +3,30 @@
  *   lib
  * 
  *   Created by Fatih Balsoy on 8/15/22
- *   Last Modified by Fatih Balsoy on 8/15/22
- *   Copyright © 2022 Fatih Balsoy. All rights reserved.
+ *   Copyright © 2023 Fatih Balsoy. All rights reserved.
  */
 
 import 'dart:convert';
-import 'dart:math';
 
+import 'package:campusparc_osu/main.dart';
 import 'package:campusparc_osu/spaces.dart';
 import 'package:campusparc_osu/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:maps_launcher/maps_launcher.dart';
+import 'package:url_launcher/url_launcher.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, this.title = "Parking Spaces"}) : super(key: key);
+class HomePage extends StatefulWidget {
+  const HomePage({Key? key, this.title = "Parking Spaces"}) : super(key: key);
 
   final String title;
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<HomePage> createState() => _HomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _HomePageState extends State<HomePage> {
+  final String favoritesKey = "favorites_prefs";
   Map<String, bool> starred = {};
   Map<String, double> occupancies = {};
   Map<String, double> networkCache = {};
@@ -36,6 +37,11 @@ class _MyHomePageState extends State<MyHomePage> {
     spaces.forEach((key, value) {
       starred.addEntries([MapEntry(key, false)]);
     });
+    List<String> saved = preferences!.getStringList(favoritesKey) ?? [];
+    for (String key in saved) {
+      starred.update(key, (value) => true);
+      getOccupancy(key, true);
+    }
   }
 
   @override
@@ -71,11 +77,24 @@ class _MyHomePageState extends State<MyHomePage> {
         },
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          launchUrl(Uri.parse("https://maps.google.com"));
+        },
         tooltip: 'Start Driving',
         child: const Icon(Icons.time_to_leave),
       ),
     );
+  }
+
+  setPreferences(String key, bool value) {
+    List<String> list = preferences!.getStringList(favoritesKey) ?? [];
+    if (value) {
+      list.add(key);
+    } else {
+      list.remove(key);
+    }
+    preferences!.setStringList(favoritesKey, list);
+    getOccupancy(key, value);
   }
 
   Widget tile(String key, {required bool inFavorites}) {
@@ -90,6 +109,7 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: () {
                 setState(() {
                   starred.update(key, (value) => !value);
+                  setPreferences(key, starred[key]!);
                   if (!occupancies.containsKey(key) && !isStarred) {
                     occupancies.addAll({key: getOccupancy(key, true)});
                   } else if (isStarred) {
@@ -131,13 +151,7 @@ class _MyHomePageState extends State<MyHomePage> {
           "Referer": "https://sureparc.campusparc.com/",
           "Sec-Fetch-Dest": "empty",
           "Sec-Fetch-Mode": "cors",
-          "Sec-Fetch-Site": "cross-site",
-          // "User-Agent":
-          //     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.81 Safari/537.36 Edg/104.0.1293.47",
-          // "sec-ch-ua":
-          //     "\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Microsoft Edge\";v=\"104\"",
-          // "sec-ch-ua-mobile": "?0",
-          // "sec-ch-ua-platform": "\"macOS\""
+          "Sec-Fetch-Site": "cross-site"
         },
         body:
             '{"requiredData": {"$key": {"_zoneId": "${spaces[key]!["zoneId"]}", "occupancy":["occupancyRate","occupancyLastUpdate"]}}}');
@@ -147,8 +161,9 @@ class _MyHomePageState extends State<MyHomePage> {
     if (!networkCache.containsKey(key)) {
       fetchOccupancyFromInternet(key).then((response) {
         var json = jsonDecode(utf8.decode(response.bodyBytes)) as Map;
+        Map occupancyRate = json["data"][key]["occupancy"][0]["occupancyRate"];
         double occupancy =
-            json["data"][key]["occupancy"][0]["occupancyRate"]["value"];
+            occupancyRate.containsKey("value") ? occupancyRate["value"] : 0.0;
         setState(() {
           networkCache.addAll({key: occupancy});
           if (add) {
