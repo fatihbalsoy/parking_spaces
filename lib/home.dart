@@ -18,7 +18,6 @@ import 'package:url_launcher/url_launcher.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key, this.title = "Parking Spaces"}) : super(key: key);
-
   final String title;
 
   @override
@@ -34,9 +33,12 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
+    // Setup empty favorites map
     spaces.forEach((key, value) {
       starred.addEntries([MapEntry(key, false)]);
     });
+
+    // Import data saved from previous sessions
     List<String> saved = preferences!.getStringList(favoritesKey) ?? [];
     for (String key in saved) {
       starred.update(key, (value) => true);
@@ -61,11 +63,14 @@ class _HomePageState extends State<HomePage> {
       body: ListView.separated(
         itemBuilder: (context, index) {
           if (hasStarred && index == 0) {
+            // Display favorites header
             return const ListTile(title: Text("Favorites"));
           } else if (hasStarred && index < stars + 1) {
+            // Display favorites
             String key = onlyStarred.elementAt(index - 1).key;
             return tile(key, inFavorites: true);
           } else {
+            // Display other spaces
             int listIndex = hasStarred ? index - 1 - stars : index;
             String key = spaces.entries.elementAt(listIndex).key;
             return tile(key, inFavorites: false);
