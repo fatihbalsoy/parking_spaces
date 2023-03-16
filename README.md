@@ -41,7 +41,7 @@ This cross-platform application displays the occupancy rate of garages and parki
 - [x] Linux
 - [x] macOS
 - [ ] Web
-    - Disable `Same-Origin Policies` on your browser
+    - Disable `Cross-Origin Policies` on your browser
 - [x] Windows
 
 ## License
